@@ -1,0 +1,24 @@
+                          IV-2SLS Estimation Summary                          
+==============================================================================
+Dep. Variable:                 dCPF3M   R-squared:                      0.0023
+Estimator:                    IV-2SLS   Adj. R-squared:                 0.0010
+No. Observations:                1450   F-statistic:                    9.5729
+Date:                Mon, Jun 09 2025   P-value (F-stat)                0.0083
+Time:                        16:29:40   Distribution:                  chi2(2)
+Cov. Estimator:                robust                                         
+                                                                              
+                             Parameter Estimates                              
+==============================================================================
+            Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+------------------------------------------------------------------------------
+const          0.0055     0.0017     3.1344     0.0017      0.0021      0.0089
+DFF           -0.0008     0.0003    -2.3734     0.0176     -0.0014     -0.0001
+dUSDT_b       -0.0086     0.0043    -2.0062     0.0448     -0.0169     -0.0002
+==============================================================================
+
+Endogenous: dUSDT_b
+Instruments: z1, z2, z3, z4, z5, z6, z7
+Robust Covariance (Heteroskedastic)
+Debiased: False
+
+Shock +5 млрд USDT ⇒ ΔCPF3M ≈ -4.28 б.п.
