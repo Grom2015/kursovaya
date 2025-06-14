@@ -1,0 +1,22 @@
+btc_daily.parquet - собранные данные по ценам BTC
+cond_vol_r_BTC.csv - условная волатильность GARCH (условная σ) для BTC
+cond_vol_r_SP500.csv - условная волатильность GARCH (условная σ) для SP500
+dcc_step3.py - Строит DCC-GARCH (Dynamic Conditional Correlation) между крипто- и equity-доходностями; выводит rolling ρ(t).
+dcca_step3.py - Вычисляет DCCA-коэффициенты
+dcca_utils.py - Вспомогательные функции для DCCA (интеграция, локальный тренд, k-scale)
+desc_returns.csv - Дескриптивная статистика (count, mean, std, min, quartiles, max) по всем лог-доходностям
+desc_stats.csv - Сводная статистика по уровневым рядам (цены, ставки, объёмы стейблкоинов)
+eda_step2.py - расчёт лог-доходностей, автокорреляций, корреляционной тепловой карты.
+eda_step5.py - Строит rolling-корреляции BTC-SP500
+ethusdt_daily.parquet -  собранные данные по ценам ETH
+fred_rates_2021_2024.parquet - Ежедневные наблюдения по ставкам денежного рынка - CPF3M, DFF, DTB3, DTB6, DGS1MO (2021-2024)
+garch_r_BTC.txt - Полный текстовый вывод (summary) оценки модели GARCH для r_BTC.
+garch_r_SP500.txt - GARCH-summary для r_SP500
+iv_regression_summary.txt - Таблица результатов IV-регрессии (2SLS) влияния ΔUSDT на CPF3M
+master_dataset.parquet - Итоговая склейка всех ежедневных рядов (крипто-цены, ставки, приросты USDT/USDC, товарные и фондовые индексы). Формирует основу для всех аналитических скриптов.
+rasschet_b.py - Финальная версия IV-регрессии: готовит лаговые инструменты, оценивает модель влияния USDT на CPF3M, рассчитывает эффект шока (+5 bn USDT), строит график и сохраняет текстовый отчёт.
+roll_corr_btc_sp500.py - Вычисляет 128-дневную скользящую корреляцию лог-доходностей BTC и S&P 500
+solusdt_daily.parquet -  собранные данные по ценам SOL
+stable_supply.parquet -  Ежедневные уровни циркулирующего объёма стейблкоинов: usdt_supply и usdc_supply
+trad_assets.parquet -  собранные данные по ценам традиционных активов
+xrpusdt_daily.parquet -  собранные данные по ценам XRP
